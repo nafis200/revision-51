@@ -49,7 +49,9 @@ const Registration = () => {
           </label>
           <input  {...register('pass',{
             required:'password is required',
-            minLength:{value: 6, message:'password must be at least 6 character'}
+            minLength:{value: 6, message:'password must be at least 6 character'},
+            validate: (value) =>
+            /^(?=.*[A-Z])/.test(value) || 'Password must contain at least one uppercase letter',
           })} type="password" placeholder="password" name="pass"  className="input input-bordered"  />
           {errors.pass && <p>{errors.pass.message}</p>}
         </div>
