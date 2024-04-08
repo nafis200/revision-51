@@ -3,6 +3,7 @@ import Navabr from "./Navabr";
 import { useContext } from "react";
 import { AuthContext } from "./Authprovider";
 import Swipper from "./Swipper"
+import Map from "./Map"
 
 const Home = () => {
 
@@ -12,6 +13,8 @@ const Home = () => {
             <Navabr></Navabr>
             <Outlet></Outlet>
             <Swipper></Swipper>
+            <Map></Map>
+            
             
         </div>
     );
