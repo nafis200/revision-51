@@ -16,13 +16,13 @@ const Registration = () => {
    }
 
   return (
-        <div className="hero min-h-screen">
+        <div className="hero min-h-screen ">
   <div className="hero-content flex-col">
     <div className="text-center">
-      <h1 className="lg:text-5xl md:text-3xl text-xl font-bold mb-5">Registration now!</h1>
+      <h1 className="lg:text-5xl md:text-3xl text-xl font-bold mb-5 -ml-8 lg:ml-0 md:ml-0">Registration now!</h1>
     </div>
-    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-      <form onSubmit={handleSubmit(handleRegistration)} className="card-body">
+    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 -ml-5 lg:ml-0 md:ml-0">
+      <form  onSubmit={handleSubmit(handleRegistration)} className="card-body">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Name</span>
