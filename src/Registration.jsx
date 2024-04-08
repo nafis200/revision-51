@@ -47,8 +47,11 @@ const Registration = () => {
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input  {...register('pass')} type="password" placeholder="password" name="pass"  className="input input-bordered"  />
-         
+          <input  {...register('pass',{
+            required:'password is required',
+            minLength:{value: 6, message:'password must be at least 6 character'}
+          })} type="password" placeholder="password" name="pass"  className="input input-bordered"  />
+          {errors.pass && <p>{errors.pass.message}</p>}
         </div>
         <div className="form-control">
           <label className="label">
